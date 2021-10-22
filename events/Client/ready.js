@@ -10,7 +10,7 @@ module.exports = async (client) => {
     let statuses = ['/help', `Prefix : ${prefix}`];
     setInterval(function() {
   		let status = statuses[Math.floor(Math.random()*statuses.length)];
-  		client.user.setActivity(status, {type: "PLAYING"});
+  		client.user.setActivity(">help | Rhyme", {type: "PLAYING"});
   	}, 10000)
 
 }
